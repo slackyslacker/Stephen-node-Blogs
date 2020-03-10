@@ -9,7 +9,7 @@ fetch('/api/blogs', {
     body:JSON.stringify({title:'My Title',content:'My Content' })
 })
 }
-//get  
+//get
 ()=>{
     return fetch('/api/blogs', {
         method:'GET',

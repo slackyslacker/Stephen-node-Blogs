@@ -67,7 +67,7 @@ describe('user is not logged in', async () => {
       })
     expect(result).toEqual({ error: 'You must log in!' })
   })
-
+//test
   test('User cannot create blog posts', async () => {
     const result = await page.evaluate(
       () => {

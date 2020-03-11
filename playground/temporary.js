@@ -1,21 +1,21 @@
 // Temporary file to create a new blog post
-()=>{
-fetch('/api/blogs', {
-    method:'POST',
-    credentials:'same-origin',
-    headers:{
-        'Content-Type':'application/json'
+() => {
+  fetch('/api/blogs', {
+    method: 'POST',
+    credentials: 'same-origin',
+    headers: {
+      'Content-Type': 'application/json'
     },
-    body:JSON.stringify({title:'My Title',content:'My Content' })
-})
+    body: JSON.stringify({ title: 'My Title', content: 'My Content' })
+  })
 }
-//get
-()=>{
-    return fetch('/api/blogs', {
-        method:'GET',
-        credentials:'same-origin',
-        headers:{
-            'Content-Type':'application/json'
-        }
-    })
+// get
+() => {
+  return fetch('/api/blogs', {
+    method: 'GET',
+    credentials: 'same-origin',
+    headers: {
+      'Content-Type': 'application/json'
     }
+  })
+}
